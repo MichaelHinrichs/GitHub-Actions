@@ -1,6 +1,7 @@
 # GitHub-Actions
 My first GitHub actions repo!
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7ba0e8e44ce5480bb703a09d9cd581b1)](https://app.codacy.com/gh/MichaelHinrichs/GitHub-Actions?utm_source=github.com&utm_medium=referral&utm_content=MichaelHinrichs/GitHub-Actions&utm_campaign=Badge_Grade)
 [![Author](https://img.shields.io/badge/author-MichaelHinrichs-blue.svg?style=flat&logo=github&logoColor=whitesmoke&label=Author)](https://github.com/MichaelHinrichs)
 ![GitHub repo size](https://img.shields.io/github/repo-size/MichaelHinrichs/GitHub-Actions?style=flat&logo=github&logoColor=whitesmoke&label=Repo%20Size)
 ![GitHub repo file count](https://img.shields.io/github/directory-file-count/MichaelHinrichs/GitHub-Actions)
