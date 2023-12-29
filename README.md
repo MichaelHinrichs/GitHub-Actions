@@ -25,3 +25,5 @@ My first GitHub actions repo!
 ![GitHub repo contributors](https://img.shields.io/github/contributors-anon/MichaelHinrichs/GitHub-Actions?style=flat&logo=github&logoColor=whitesmoke&label=Contributors)
 ![GitHub language count](https://img.shields.io/github/languages/count/MichaelHinrichs/GitHub-Actions)
 ![GitHub language count](https://img.shields.io/github/languages/top/MichaelHinrichs/GitHub-Actions)
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a777a5b0223f4aeea15b895757ecd7ea)](https://app.codacy.com/gh/MichaelHinrichs/GitHub-Actions/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
