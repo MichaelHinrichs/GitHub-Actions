@@ -1,0 +1,166 @@
+name: appcircle
+
+on:
+  push:
+    branches:
+    - appcircle
+  pull_request:
+    branches:
+    - main
+
+permissions: read-all
+
+jobs:
+  Android_JavaKotlin:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Metadata
+        uses: appcircleio/appcircle-workflows/Android-JavaKotlin-Metadata.yaml@latest
+      - name: Merge
+        uses: appcircleio/appcircle-workflows/Android-JavaKotlin-Merge.yaml@latest
+      - name: Build
+        uses: appcircleio/appcircle-workflows/Android-JavaKotlin-Build.yaml@latest
+      - name: Resign
+        uses: appcircleio/appcircle-workflows/Android-Resign.yaml@latest
+      - name: GooglePlayStore StoreSubmit
+        uses: appcircleio/appcircle-workflows/Android-GooglePlayStore-StoreSubmit.yaml@latest
+      - name: HuaweiAppGallery StoreSubmit
+        uses: appcircleio/appcircle-workflows/Android-HuaweiAppGallery-StoreSubmit.yaml@latest
+
+  Android_ReactNative:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Metadata
+        uses: appcircleio/appcircle-workflows/Android-ReactNative-Metadata.yaml@latest
+      - name: Merge
+        uses: appcircleio/appcircle-workflows/Android-ReactNative-Merge.yaml@latest
+      - name: Build
+        uses: appcircleio/appcircle-workflows/Android-ReactNative-Build.yaml@latest
+      - name: Resign
+        uses: appcircleio/appcircle-workflows/Android-Resign.yaml@latest
+      - name: GooglePlayStore StoreSubmit
+        uses: appcircleio/appcircle-workflows/Android-GooglePlayStore-StoreSubmit.yaml@latest
+      - name: HuaweiAppGallery StoreSubmit
+        uses: appcircleio/appcircle-workflows/Android-HuaweiAppGallery-StoreSubmit.yaml@latest
+
+  iOS_Flutter:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Metadata
+        uses: appcircleio/appcircle-workflows/iOS-Flutter-Metadata.yaml@latest
+      - name: Merge
+        uses: appcircleio/appcircle-workflows/iOS-Flutter-Merge.yaml@latest
+      - name: Build
+        uses: appcircleio/appcircle-workflows/iOS-Flutter-Build.yaml@latest
+      - name: Resign
+        uses: appcircleio/appcircle-workflows/iOS-Resign.yaml@latest
+      - name: StoreSubmit
+        uses: appcircleio/appcircle-workflows/iOS-StoreSubmit.yaml@latest
+
+  iOS_ObjectiveCSwift:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Metadata
+        uses: appcircleio/appcircle-workflows/iOS-ObjectiveCSwift-Metadata.yaml@latest
+      - name: Merge
+        uses: appcircleio/appcircle-workflows/iOS-ObjectiveCSwift-Merge.yaml@latest
+      - name: Build
+        uses: appcircleio/appcircle-workflows/iOS-ObjectiveCSwift-Build.yaml@latest
+      - name: Resign
+        uses: appcircleio/appcircle-workflows/iOS-Resign.yaml@latest
+      - name: StoreSubmit
+        uses: appcircleio/appcircle-workflows/iOS-StoreSubmit.yaml@latest
+
+  iOS_ReactNative:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Metadata
+        uses: appcircleio/appcircle-workflows/iOS-ReactNative-Metadata.yaml@latest
+      - name: Merge
+        uses: appcircleio/appcircle-workflows/iOS-ReactNative-Merge.yaml@latest
+      - name: Build
+        uses: appcircleio/appcircle-workflows/iOS-ReactNative-Build.yaml@latest
+      - name: Resign
+        uses: appcircleio/appcircle-workflows/iOS-Resign.yaml@latest
+      - name: StoreSubmit
+        uses: appcircleio/appcircle-workflows/iOS-StoreSubmit.yaml@latest
+
+  Android_Flutter:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Merge
+        uses: appcircleio/appcircle-workflows/Android-Flutter-Merge.yaml@latest
+      - name: Build
+        uses: appcircleio/appcircle-workflows/Android-Flutter-Build.yaml@latest
+      - name: Resign
+        uses: appcircleio/appcircle-workflows/Android-Resign.yaml@latest
+      - name: GooglePlayStore StoreSubmit
+        uses: appcircleio/appcircle-workflows/Android-GooglePlayStore-StoreSubmit.yaml@latest
+      - name: HuaweiAppGallery StoreSubmit
+        uses: appcircleio/appcircle-workflows/Android-HuaweiAppGallery-StoreSubmit.yaml@latest
+
+  Android_Smartface:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Merge
+        uses: appcircleio/appcircle-workflows/Android-Smartface-Merge.yaml@latest
+      - name: Build
+        uses: appcircleio/appcircle-workflows/Android-Smartface-Build.yaml@latest
+      - name: Resign
+        uses: appcircleio/appcircle-workflows/Android-Resign.yaml@latest
+      - name: GooglePlayStore StoreSubmit
+        uses: appcircleio/appcircle-workflows/Android-GooglePlayStore-StoreSubmit.yaml@latest
+      - name: HuaweiAppGallery StoreSubmit
+        uses: appcircleio/appcircle-workflows/Android-HuaweiAppGallery-StoreSubmit.yaml@latest
+
+  iOS_Smartface:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Merge
+        uses: appcircleio/appcircle-workflows/iOS-Smartface-Merge.yaml@latest
+      - name: Build
+        uses: appcircleio/appcircle-workflows/iOS-Smartface-Build.yaml@latest
+      - name: Resign
+        uses: appcircleio/appcircle-workflows/iOS-Resign.yaml@latest
+      - name: StoreSubmit
+        uses: appcircleio/appcircle-workflows/iOS-StoreSubmit.yaml@latest
