@@ -1,4 +1,12 @@
 {
   "projectName": "GitHub-Actions",
-  "projectOwner": "MichaelHinrichs"
+  "projectOwner": "MichaelHinrichs",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": ["README.md", ".all-contributorsrc"],
+  "contributorsPerLine": 7,
+  "contributorsSortAlphabetically": false,
+  "linkToUsage": true,
+  "skipCi": true,
+  "contributors": []
 }
