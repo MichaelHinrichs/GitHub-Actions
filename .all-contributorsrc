@@ -29,6 +29,15 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "MichaelHinrichs",
+      "name": "NintenHero",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37460517?v=4",
+      "profile": "https://github.com/MichaelHinrichs",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs",
