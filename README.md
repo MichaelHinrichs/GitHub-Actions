@@ -28,6 +28,8 @@ My first GitHub actions repo!
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/a777a5b0223f4aeea15b895757ecd7ea)](https://app.codacy.com/gh/MichaelHinrichs/GitHub-Actions/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
+## Contributors
+
 [![All Contributors](https://img.shields.io/github/all-contributors/MichaelHinrichs/GitHub-Actions?color=ee8449)](#contributors)
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=MichaelHinrichs/GitHub-Actions)
