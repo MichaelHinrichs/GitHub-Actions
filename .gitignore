@@ -396,3 +396,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# F#
+[Ll]ib/[Dd]ebug/
+[Ll]ib/[Rr]elease/
+/[Bb]uild/
+*.exe
+!.paket/paket.bootstrapper.exe
