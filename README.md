@@ -1,6 +1,8 @@
 # GitHub-Actions
 My first GitHub actions repo!
 
+![Alt](https://repobeats.axiom.co/api/embed/cd1f4b4ee22c82b186c4cdfaed09b65c8a9e989a.svg "Repobeats analytics image")
+
 [![Author](https://img.shields.io/badge/author-MichaelHinrichs-blue.svg?style=flat&logo=github&logoColor=whitesmoke&label=Author)](https://github.com/MichaelHinrichs)
 ![GitHub repo size](https://img.shields.io/github/repo-size/MichaelHinrichs/GitHub-Actions?style=flat&logo=github&logoColor=whitesmoke&label=Repo%20Size)
 ![GitHub repo file count](https://img.shields.io/github/directory-file-count/MichaelHinrichs/GitHub-Actions)
